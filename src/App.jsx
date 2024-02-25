@@ -15,7 +15,7 @@ function App() {
         const file = e.target.csv_file.files;
         const data = new FormData(e.target);
         if (file.length > 0) {
-            const res = await fetch(process.env.REACT_APP_SERVER, {
+            const res = await fetch("https://verifycsv-server.onrender.com/", {
                 method: "POST",
                 mode: "cors",
                 body: data,
