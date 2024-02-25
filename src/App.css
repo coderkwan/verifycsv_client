@@ -1,38 +1,78 @@
+body {
+    background-color: rgb(23, 12, 31);
+}
+* {
+    color: white;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    align-items: center;
+}
 .App {
-  text-align: center;
+    text-align: center;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.App h2 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+.App form {
+    background-color: rgba(238, 238, 238, 0.103);
+    box-shadow: 3px 3px 72px 12px rgba(0, 0, 0, 0.295);
+    padding: 3rem;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    margin: 2rem 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App form button {
+    padding: 15px 30px;
+    background-color: rgb(67, 64, 82);
+    border: none;
+    color: rgb(231, 231, 231);
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    width: 100%;
+}
+.App form input {
+    padding: 15px 30px;
+    border: 1px solid rgba(180, 176, 241, 0.37);
+    font-size: 1.1rem;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.App form button:hover {
+    background-color: rgb(50, 41, 73);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+table {
+    table-layout: fixed;
+    border: 1px solid rgb(119, 120, 124);
+    padding: 0;
+    background-color: rgba(238, 238, 238, 0.103);
+}
+table tr th {
+    text-align: left;
+    background: rgba(66, 46, 114, 0.5);
+    color: rgba(210, 214, 253, 0.884);
+    text-transform: uppercase;
+    padding: 12px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+table tr td {
+    text-align: left;
+    border-top: 1px solid rgba(138, 139, 146, 0.685);
+    padding: 12px;
 }
