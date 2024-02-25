@@ -15,7 +15,7 @@ function App() {
         const file = e.target.csv_file.files;
         const data = new FormData(e.target);
         if (file.length > 0) {
-            const res = await fetch("http://127.0.0.1:5000/", {
+            const res = await fetch(process.env.REACT_APP_SERVER, {
                 method: "POST",
                 mode: "cors",
                 body: data,
