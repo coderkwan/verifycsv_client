@@ -7,7 +7,7 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
     min-height: 100vh;
     align-items: center;
 }
@@ -23,6 +23,22 @@ body {
     font-size: 2rem;
     margin-bottom: 0;
 }
+
+nav {
+    display: flex;
+    gap: 1rem;
+    margin-top: 12px;
+}
+
+nav button {
+    cursor: pointer;
+    padding: 14px 44px;
+    font-size: 16px;
+    border-radius: 12px;
+    background-color: rgb(62, 63, 124);
+    border: 0;
+}
+
 .App form {
     background-color: rgba(238, 238, 238, 0.103);
     box-shadow: 3px 3px 72px 12px rgba(0, 0, 0, 0.295);
@@ -33,6 +49,21 @@ body {
     align-items: start;
     gap: 1rem;
     margin: 2rem 0;
+}
+.category_wrapper {
+    display: flex;
+    gap: 2rem;
+    margin-top: 40px;
+}
+.category {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+}
+.products form {
+    max-width: 100%;
+    justify-content: start;
 }
 
 .App form button {
@@ -52,6 +83,7 @@ body {
     font-size: 1.1rem;
     color: rgb(255, 255, 255);
     cursor: pointer;
+    max-width: 250px;
 }
 .App form button:hover {
     background-color: rgb(50, 41, 73);
@@ -75,4 +107,18 @@ table tr td {
     text-align: left;
     border-top: 1px solid rgba(138, 139, 146, 0.685);
     padding: 12px;
+    color: rgb(223, 223, 223);
+}
+tr,
+p {
+    color: rgb(223, 223, 223);
+}
+tr:nth-child(even) {
+    background-color: rgba(238, 238, 238, 0.055);
+}
+
+.numbers {
+    padding: 20px;
+    background-color: rgb(67, 64, 82);
+    margin: 20px 0;
 }
